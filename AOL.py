@@ -16,6 +16,8 @@ percent = int(input("what is your mark"))
 
 
 def grade(percent):
+    while percent < 0 or percent > 100:
+        percent = int(input("That is not a possible grade. Input another one"))
     if percent in range(0,50):
         print("F")
     elif percent in range(50,56):
